@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using Microsoft.MixedReality.Toolkit.Utilities;
-
 #if MIXED_REALITY_OPENXR
 using Microsoft.MixedReality.OpenXR;
 #else
@@ -45,9 +43,9 @@ namespace QRTracking
                 {
                     // If there is a parent to the camera that means we are using teleport and we should not apply the teleport
                     // to these objects so apply the inverse
-                    if (CameraCache.Main.transform.parent != null)
+                    if (Camera.main.transform.parent != null)
                     {
-                        pose = pose.GetTransformedBy(CameraCache.Main.transform.parent);
+                        pose = pose.GetTransformedBy(Camera.main.transform.parent);
                     }
 
                     gameObject.transform.SetPositionAndRotation(pose.position, pose.rotation);
