@@ -1,5 +1,11 @@
-QR Tracking Unity Sample for HoloLens 2 Using OpenXR
+QR Tracking Unity Sample for HoloLens 2 Using OpenXR and MRTK3
 ===
+
+This fork was used for my thesis project and will not be updated.
+Changes to the repo were based on:
+
+https://localjoost.github.io/MRTK2-to-MRTK3-migrating-the-QRCode-sample/
+https://localjoost.github.io/Quick-Fix-for-MRTK3-pre11-CameraCache-removal/
 
 This repo contains QR code tracking sample Unity project that displays the information and location of a QR code using HoloLens 2.
 
